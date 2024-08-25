@@ -7,8 +7,21 @@ const app = express();
 app.use(cors());
 
 const praktikum = require(`./Route/praktikumRoute`)
-
 app.use(`/praktikum`, praktikum)
+
+const bangunRuangRoute = require(`./routes/bangunRuang`);
+app.use(`/bangun-ruang`, bangunRuangRoute);
+
+const bilangan = require('./routes/bilangan')
+app.use('/bilangan', bilangan)
+
+const convertRoute = require(`./routes/suhuConverter`);
+app.use(`/convert`, convertRoute);
+
+const bmi = require('./routes/bmi')
+app.use('/bmi', bmi)
+
+
 
 app.get("/test", (req, res) => {
   let response = {
