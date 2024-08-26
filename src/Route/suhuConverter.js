@@ -3,7 +3,7 @@ const app = express()
 
 app.use(express.json())
 
-const controller = require(`../controllers/suhuConverterControl`)
+const controller = require(`../Controller/suhuConverterControl`)
 
 app.post("/celcius/:value", controller.celcius)
 app.post("/reamure/:value", controller.reamure)

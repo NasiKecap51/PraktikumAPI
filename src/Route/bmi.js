@@ -3,7 +3,7 @@ const app = express()
 
 app.use(express.json())
 
-const controller = require(`../controllers/bmiController`)
+const controller = require(`../Controller/bmiController`)
 
 app.post("/", controller.bmi)
 

@@ -3,7 +3,7 @@ const app = express()
 
 app.use(express.json())
 
-const controller = require(`../controllers/controllerBangunRuang`)
+const controller = require(`../Controller/controllerBangunRuang`)
 
 app.post("/kubus", controller.kubus)
 app.post("/balok", controller.balok)

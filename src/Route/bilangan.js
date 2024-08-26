@@ -3,7 +3,7 @@ const app = express()
 
 app.use(express.json())
 
-const controller = require(`../controllers/controllerBilangan`)
+const controller = require(`../Controller/controllerBilangan`)
 
 app.post("/decimal", controller.decimal)
 app.post("/biner", controller.biner)

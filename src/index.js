@@ -9,16 +9,16 @@ app.use(cors());
 const praktikum = require(`./Route/praktikumRoute`)
 app.use(`/praktikum`, praktikum)
 
-const bangunRuangRoute = require(`./routes/bangunRuang`);
+const bangunRuangRoute = require('./Route/bangunRuang');
 app.use(`/bangun-ruang`, bangunRuangRoute);
 
-const bilangan = require('./routes/bilangan')
+const bilangan = require('./Route/bilangan')
 app.use('/bilangan', bilangan)
 
-const convertRoute = require(`./routes/suhuConverter`);
+const convertRoute = require(`./Route/suhuConverter`);
 app.use(`/convert`, convertRoute);
 
-const bmi = require('./routes/bmi')
+const bmi = require('./Route/bmi')
 app.use('/bmi', bmi)
 
 
