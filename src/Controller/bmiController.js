@@ -25,4 +25,4 @@ exports.bmi = (req, res) => {
     }
 
     return res.json(response)
-}
+} 
